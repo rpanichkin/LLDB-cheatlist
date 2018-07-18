@@ -13,7 +13,7 @@
 *e NSString \*$globalConstant = @"What's up"*
 
 ### • Set one breakpoint that enables another: put that in the expression command in the debugger line of the breakpoint:
-*breakpoint set --one-shot true "-[UILabel setText:]"*
+*breakpoint set --one-shot true --name "-[UILabel setText:]"*
 
 ### • Symbolic breakpoints - to print arguments use:
 *po $arg1* - is receiver
@@ -51,7 +51,7 @@ https://github.com/facebook/chisel
 ### • Show or hide the given view or layer. You don't even have to continue the process to see the changes!
 *show/hide self.view*
 
-### • Alias for(void)[CATransaction flush]
+### • Alias for (void)[CATransaction flush]
 *caflush* 
 
 ### • And much more, check out Chisel repo
